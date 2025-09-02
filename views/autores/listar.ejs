@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Autores</title>
+</head>
+<body>
+  <h1>Lista de Autores</h1> 
+  <a href="/autores/criar">Criar Autor</a>
+  <ul>
+    <% autores.forEach(autor => { %>
+      <li>
+        <%= autor.nome %> - <%= autor.nascimento %> - <%= autor.genero %>
+          <a href="/autores/<%= autor.id %>/editar">Editar</a>
+        </li>
+    <% }); %>
+  </ul>
+</body>
+</html>

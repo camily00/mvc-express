@@ -11,7 +11,7 @@
   <ul>
     <% livros.forEach(livro => { %>
       <li>
-        <%= livro.titulo %> - <%= livro.autor %>
+        <%= livro.titulo %> - <%= livro.autor %> - <%= livro.ano %>
           <a href="/livros/<%= livro.id %>/editar">Editar</a>
         </li>
     <% }); %>
